@@ -1,0 +1,460 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*____________________________________________logo_____________________________________*/
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 140px;
+  margin-top: 50px;
+}
+
+.logo img {
+  width: 205px;
+  height: 94px;
+}
+
+.logo p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 40px;
+}
+
+
+/*____________________________________________logo_______________________________________*/
+
+
+/*____________________________________________Forms________________________________________*/
+
+.forms {
+  width: 646px;
+  height: 600px;
+  background: #F0F0F0;
+  margin-top: 15px;
+}
+
+.forms h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 49px;
+  padding-top: 50px;
+  padding-left: 150px;
+}
+
+.login-text {
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 65px;
+  padding-left: 170px;
+}
+
+.login-text p {
+  color: #CF1B22;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.login-text img {
+  width: 150px;
+  height: 3px;
+}
+
+
+/*____________________________________________Forms________________________________________*/
+
+
+/*____________________________________________Inputs________________________________________*/
+
+.inputs {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 35px;
+  margin-left: 150px;
+  z-index: 9999;
+}
+
+.inputs input {
+  margin-bottom: 1px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.custom-field {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.custom-field input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  padding: 12px;
+  padding-top: 20px;
+  padding-left: 35px;
+  color: #848484;
+  border-radius: 3px;
+  width: 515px;
+  height: 96px;
+  font-weight: 600;
+  outline: none;
+  font-size: 16px;
+}
+
+.custom-field .placeholder {
+  position: absolute;
+  left: 35px;
+  top: 20px;
+  transform: translateY(-50%);
+  color: #E2E0E0;
+  width: 205px;
+  transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.custom-field input.dirty+.placeholder,
+.custom-field input:valid+.placeholder,
+.custom-field input:focus+.placeholder {
+  top: 5px;
+  font-size: 16px;
+  color: #E2E0E0;
+  font-weight: 500;
+}
+
+
+/*____________________________________________Inputs________________________________________*/
+
+
+/*____________________________________________Buttons________________________________________*/
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons button {
+  width: 190px;
+  height: 60px;
+  background: #CF1B22;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.buttons a {
+  margin-left: 45px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #858484;
+  text-decoration: none;
+}
+
+
+/*____________________________________________Buttons________________________________________*/
+
+
+/*__________________________________________Remember_______________________________________*/
+
+.remember {
+  margin-left: 160px;
+  margin-top: 25px;
+}
+
+.remember label {
+  color: #858484;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.remember input[type="checkbox"] {
+  display: none;
+}
+
+.remember label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: -10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+
+.remember input[type="checkbox"]:checked+label::before {
+  content: '';
+  border: none;
+  background-size: 100%;
+  background-image: url(img/icon-done.svg);
+}
+
+
+/*__________________________________________Remember_______________________________________*/
+
+
+/*__________________________________________login-with______________________________________*/
+
+.login-with {
+  display: flex;
+  padding-top: 35px;
+  padding-left: 150px;
+}
+
+.login-with p {
+  margin-right: 30px;
+  color: #858484;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.login-with a {
+  margin-right: 20px;
+  color: #282828;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+
+/*__________________________________________login-with______________________________________*/
+
+
+/*___________________________________________slider_________________________________________*/
+
+.slider {
+  width: 630px;
+  height: 810px;
+  margin-top: 70px;
+  z-index: 99999999;
+}
+
+#slider {
+  list-style: none;
+}
+
+#slider img {
+  position: absolute;
+}
+
+#dots {
+  list-style: none;
+}
+
+
+/*___________________________________________slider_________________________________________*/
+
+
+/*___________________________________________footer_________________________________________*/
+
+footer {
+  width: 100%;
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+footer a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  color: #CF1B22;
+  text-decoration: none;
+}
+
+footer .Rights {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2E2E2E;
+}
+
+footer .voolar {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 19px;
+  color: #2E2E2E;
+}
+
+
+/*___________________________________________footer_________________________________________*/
+
+
+/*___________________________________________ADAPTIVE_________________________________________*/
+
+@media (max-width: 1440px) {
+  .slider {
+    width: 562px;
+    height: 700px;
+    margin-top: 150px;
+  }
+  .slider img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .logo {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .forms h1 {
+    padding-left: 45px;
+  }
+  .login-text {
+    padding-left: 45px;
+  }
+  .inputs {
+    margin-top: 35px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .custom-field input {
+    width: 100%;
+  }
+  .forms {
+    width: 100%;
+    height: 600px;
+    margin-top: 15px;
+  }
+  .remember {
+    margin-left: 45px;
+  }
+  .login-with {
+    padding-top: 35px;
+    padding-left: 45px;
+  }
+  .left {
+    width: 100%;
+  }
+  .slider {
+    display: none;
+  }
+}
+
+
+/*_____________________________________________1200___________________________________________*/
+
+@media (max-width: 1200px) {}
+
+
+/*_____________________________________________1200___________________________________________*/
+
+
+/*_____________________________________________992_____________________________________________*/
+
+@media (max-width: 992px) {
+  footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  footer a {
+    margin-bottom: 30px;
+  }
+}
+
+
+/*_____________________________________________992_____________________________________________*/
+
+
+/*_____________________________________________768_____________________________________________*/
+
+@media (max-width: 768px) {}
+
+
+/*_____________________________________________768_____________________________________________*/
+
+
+/*_____________________________________________576_____________________________________________*/
+
+@media (max-width: 576px) {
+  .buttons a {
+    margin-left: 25px;
+  }
+}
+
+
+/*_____________________________________________576_____________________________________________*/
+
+
+/*_____________________________________________425_____________________________________________*/
+
+@media (max-width: 425px) {
+  .logo p {
+    margin-left: 15px;
+  }
+  .forms h1 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 24px;
+    padding-top: 20px;
+  }
+  .login-text {
+    padding-top: 20px;
+  }
+  .inputs {
+    margin-top: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .custom-field input {
+    width: 100%;
+  }
+  .buttons {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .buttons button {
+    width: 100%;
+  }
+  .buttons a {
+    margin-top: 25px;
+  }
+  .login-with {
+    padding-left: 15px;
+  }
+  .login-with p {
+    margin-right: 10px;
+  }
+}
+
+
+/*_____________________________________________425_____________________________________________*/
+
+
+/*___________________________________________ADAPTIVE_________________________________________*/
