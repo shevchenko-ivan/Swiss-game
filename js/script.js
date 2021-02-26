@@ -133,5 +133,8 @@ var app = angular.module('app', ['easypiechart']);
 
 // Show-input-in-tooltip
 function showInpt(){
+  if (true) {
+
+  }
   document.getElementById("inpt").style.visibility = "visible";
 }
