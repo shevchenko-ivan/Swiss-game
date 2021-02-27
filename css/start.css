@@ -147,18 +147,18 @@ body {
 
 .diamonds img {
   width: 45px;
+  height: 45px;
 }
 
-
-
-.tooltip {
+.diamond-wrapper {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-.tooltip .tooltiptext {
+.diamond-wrapper .text {
   visibility: hidden;
   background-color: #CF1B22;
   color: #fff;
@@ -170,7 +170,7 @@ body {
   top: 150%;
 }
 
-.tooltip .tooltiptext::after {
+.diamond-wrapper .text::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -181,26 +181,51 @@ body {
   border-color: transparent transparent #CF1B22 transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.diamond-wrapper:hover .text {
   visibility: visible;
 }
 
+.visible {
+  visibility: visible;
+}
 
+.hidden {
+  visibility: hidden;
+  display: none;
+}
 
-
-.tooltip-input {
-  position: relative;
+.diamond-wrapper .input-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+  background-color: #CF1B22;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
 }
 
-.tooltip-input input{
+.diamond-wrapper .input-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #CF1B22 transparent;
+}
+
+.diamond-wrapper .input-wrapper input {
   -webkit-appearance: none;
   -ms-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: rgba(255, 255, 255, 0.2);;
+  background: rgba(255, 255, 255, 0.2);
   padding: 12px;
   padding-top: 15px;
   padding-left: 5px;
@@ -217,31 +242,16 @@ body {
   font-size: 16px;
 }
 
-
-.tooltip-input .tooltiptext {
-  visibility: hidden;
-  background-color: #CF1B22;
-  color: #fff;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px 20px;
-  position: absolute;
-  z-index: 1;
-  top: 150%;
+.diamond-wrapper .input-wrapper button {
+  all: unset;
+  margin-left: 10px;
 }
 
-.tooltip-input .tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #CF1B22 transparent;
+.diamond-wrapper .input-wrapper img {
+  all: unset;
+  width: 30px;
+  height: 30px;
 }
-
-
 
 
 /*____________________________________________diamonds________________________________________*/
@@ -293,6 +303,10 @@ body {
   border-radius: 100px;
 }
 
+.black {
+  color: #000;
+}
+
 .yellow {
   color: #F58726;
 }
@@ -314,8 +328,6 @@ body {
   margin-left: 0.1em;
   font-size: .8em;
 }
-
-.angular {}
 
 .angular .chart {
   margin-top: 0;
