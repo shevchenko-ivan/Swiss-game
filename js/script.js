@@ -115,6 +115,21 @@ var app = angular.module('app', ['easypiechart']);
           lineCap:'round'
         };
       }]);
+      app.controller('chart-black', ['$scope', function ($scope) {
+        $scope.percent = 53;
+        $scope.anotherPercent = 54;
+        $scope.anotherOptions = {
+          animate:{
+            duration:0,
+            enabled:false
+          },
+          size:'45',
+          barColor:'#000',
+          scaleColor:false,
+          lineWidth:6,
+          lineCap:'round'
+        };
+      }]);
       app.controller('chart-grey', ['$scope', function ($scope) {
         $scope.percent = 53;
         $scope.anotherPercent = 54;
