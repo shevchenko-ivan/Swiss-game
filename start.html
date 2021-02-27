@@ -19,20 +19,21 @@
         <img src="img/logo.png" alt="logo">
         <p>GLOBAL SUCCESS <br> WITHOUT DELAY</p>
       </div>
+
       <div class="row">
-        <div class="col-12 col-sm-12 col-md-4 ">
+        <div class="col-12 col-sm-12 col-md-4">
           <label class="custom-field">
           <input type="text" required/>
           <span class="placeholder">Name of a gamer</span>
           </label>
         </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
+        <div class="col-12 col-sm-12 col-md-4">
           <label class="custom-field">
           <input type="text" required/>
           <span class="placeholder">Сoach name</span>
           </label>
         </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
+        <div class="col-12 col-sm-12 col-md-4">
           <label class="custom-field">
           <input type="text" required/>
           <span class="placeholder">Сoordinator name</span>
@@ -42,7 +43,7 @@
       <div class="row justify-content-center borders">
         <div class="container">
           <div class="row justify-content-center red-text">
-            <div class="col-12 col-sm-12 col-md-4 ">
+            <div class="col-12 col-sm-12 col-md-4">
               <label class="custom-field">
               <input id="red-text" type="text" required/>
               <span id="red-text" class="placeholder">Goal</span>
@@ -50,252 +51,981 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
-          <label class="custom-field charts">
-            <input type="text" required/>
-            <span class="placeholder">Name</span>
-            <div class="charts-icon">
-              <img class="chart" src="img/pie-chart-outline.svg" alt="chart">
-            </div>
-          </label>
-          <div class="diamonds">
-            <div class="tooltip">
-              <img src="img/diamond-1.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <div class="tooltip">
-              <img src="img/diamond-2.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <div onclick="showInpt()" class="tooltip-input">
-              <img src="img/diamond-3.svg" alt="">
-              <div id="inpt" class="tooltiptext" style="visibility:hidden;" >
-                <input type="text" name="" value="">
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="switch-element-wrapper">
+            <label class="custom-field">
+              <input type="text" required/>
+              <span class="placeholder">Name</span>
+              <div class="charts-icon">
+                <img class="chart swith-toggle" src="img/pie-chart-outline.svg" alt="chart" onclick="swithToggle(event)">
+              </div>
+            </label>
+            <div class="diamonds visible">
+              <div class="diamond-wrapper">
+                <img src="img/diamond-1.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-2.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-3.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-4.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-5.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
               </div>
             </div>
-            <img src="img/diamond-4.svg" alt="">
-            <img src="img/diamond-5.svg" alt="">
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
-          <label class="custom-field">
-          <input type="text" required/>
-          <span class="placeholder">Name</span>
-          <div class="charts-icon">
-            <img class="chart" src="img/pie-chart-outline.svg" alt="chart">
-          </div>
-          </label>
-          <div class="diamonds">
-            <div class="tooltip">
-              <img src="img/diamond-1.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <div class="tooltip">
-              <img src="img/diamond-2.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <img src="img/diamond-3.svg" alt="">
-            <img src="img/diamond-4.svg" alt="">
-            <img src="img/diamond-5.svg" alt="">
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
-          <label class="custom-field">
-          <input type="text" required/>
-          <span class="placeholder">Name</span>
-          <div class="charts-icon">
-            <img class="chart" src="img/pie-chart-outline.svg" alt="chart">
-          </div>
-          </label>
-          <div class="diamonds">
-            <div class="tooltip">
-              <img src="img/diamond-1.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <div class="tooltip">
-              <img src="img/diamond-2.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <img src="img/diamond-3.svg" alt="">
-            <img src="img/diamond-4.svg" alt="">
-            <img src="img/diamond-5.svg" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center borders">
-        <div class="container">
-          <div class="row justify-content-center red-text">
-            <div class="col-12 col-sm-12 col-md-4 ">
-              <label class="custom-field">
-              <input id="red-text" type="text" required/>
-              <span id="red-text" class="placeholder">Group Name</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
-          <label class="custom-field">
-          <input type="text" required/>
-          <span class="placeholder">Name</span>
-          <div class="charts-icon">
-            <img class="chart" src="img/pie-chart-outline.svg" alt="chart">
-          </div>
-          </label>
-          <div class="cards">
-            <div class="tooltip">
-              <img src="img/card-1.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <img src="img/card-2.svg" alt="">
-            <img src="img/card-3.svg" alt="">
-            <img src="img/card-4.svg" alt="">
-            <img src="img/card-5.svg" alt="">
-            <img src="img/card-6.svg" alt="">
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
-          <label class="custom-field">
-          <input type="text" required/>
-          <span class="placeholder">Name</span>
-          <div class="charts-icon">
-            <img class="chart" src="img/pie-chart-outline.svg" alt="chart">
-          </div>
-          </label>
-          <div class="cards">
-            <div class="tooltip">
-              <img src="img/card-1.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <img src="img/card-2.svg" alt="">
-            <img src="img/card-3.svg" alt="">
-            <img src="img/card-4.svg" alt="">
-            <img src="img/card-5.svg" alt="">
-            <img src="img/card-6.svg" alt="">
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
-          <label class="custom-field">
-          <input type="text" required/>
-          <span class="placeholder">Name</span>
-          <div class="charts-icon">
-            <img class="chart" src="img/pie-chart-outline.svg" alt="chart">
-          </div>
-          </label>
-          <div class="cards">
-            <div class="tooltip">
-              <img src="img/card-1.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <img src="img/card-2.svg" alt="">
-            <img src="img/card-3.svg" alt="">
-            <img src="img/card-4.svg" alt="">
-            <img src="img/card-5.svg" alt="">
-            <img src="img/card-6.svg" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center borders">
-        <div class="container">
-          <div class="row justify-content-center red-text">
-            <div class="col-12 col-sm-12 col-md-4 ">
-              <label class="custom-field">
-              <input id="red-text" type="text" required/>
-              <span id="red-text" class="placeholder">Group Name</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
-          <label class="custom-field">
-          <input type="text" required/>
-          <span class="placeholder">Name</span>
-          <div class="charts-icon">
-            <img class="chart" src="img/pie-chart-outline.svg" alt="chart">
-          </div>
-          </label>
-          <div class="diamonds">
-            <div class="angular" ng-controller="chart-red">
-              <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
-              <span class="percent" ng-bind="percent"></span>
-              </span>
-            </div>
-            <div class="angular" ng-controller="chart-yellow">
-              <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
-              <span class="percent yellow" ng-bind="percent"></span>
-              </span>
-            </div>
-            <div class="angular" ng-controller="chart-green">
-              <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
-              <span class="percent green" ng-bind="percent"></span>
-              </span>
-            </div>
-            <div class="angular" ng-controller="chart-blue">
-              <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
-              <span class="percent blue" ng-bind="percent"></span>
-              </span>
-            </div>
-            <div class="angular" ng-controller="chart-grey">
-              <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
-              <span class="percent grey" ng-bind="percent"></span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
-          <label class="custom-field">
-          <input type="text" required/>
-          <span class="placeholder">Name</span>
-          <div class="charts-icon">
-            <img class="chart" src="img/pie-chart-outline.svg" alt="chart">
-          </div>
-          </label>
-          <div class="diamonds">
-            <div class="tooltip">
-              <img src="img/diamond-1.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <div class="tooltip">
-              <img src="img/diamond-2.svg" alt="">
-              <span class="tooltiptext">Text</span>
-            </div>
-            <img src="img/diamond-3.svg" alt="">
-            <img src="img/diamond-4.svg" alt="">
-            <img src="img/diamond-5.svg" alt="">
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 ">
-          <label class="custom-field">
-          <input type="text" required/>
-          <span class="placeholder">Name</span>
-          <div class="charts-icon">
-            <img class="chart" src="img/pie-chart-outline.svg" alt="chart">
-          </div>
-          </label>
 
-          <div class="diamonds">
-            <div class="tooltip">
-              <img src="img/diamond-1.svg" alt="">
-              <span class="tooltiptext">Text</span>
+            <div class="cards hidden">
+              <div class="angular" ng-controller="chart-red">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-black">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent black" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-yellow">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent yellow" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-green">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent green" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-blue">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent blue" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-grey">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent grey" ng-bind="percent"></span>
+                </span>
+              </div>
             </div>
-            <div class="tooltip">
-              <img src="img/diamond-2.svg" alt="">
-              <span class="tooltiptext">Text</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="switch-element-wrapper">
+            <label class="custom-field">
+              <input type="text" required/>
+              <span class="placeholder">Name</span>
+              <div class="charts-icon">
+                <img class="chart swith-toggle" src="img/pie-chart-outline.svg" alt="chart" onclick="swithToggle(event)">
+              </div>
+            </label>
+            <div class="diamonds visible">
+              <div class="diamond-wrapper">
+                <img src="img/diamond-1.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-2.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-3.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-4.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-5.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
             </div>
-            <img src="img/diamond-3.svg" alt="">
-            <img src="img/diamond-4.svg" alt="">
-            <img src="img/diamond-5.svg" alt="">
+
+            <div class="cards hidden">
+              <div class="angular" ng-controller="chart-red">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-black">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent black" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-yellow">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent yellow" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-green">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent green" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-blue">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent blue" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-grey">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent grey" ng-bind="percent"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="switch-element-wrapper">
+            <label class="custom-field">
+              <input type="text" required/>
+              <span class="placeholder">Name</span>
+              <div class="charts-icon">
+                <img class="chart swith-toggle" src="img/pie-chart-outline.svg" alt="chart" onclick="swithToggle(event)">
+              </div>
+            </label>
+            <div class="diamonds visible">
+              <div class="diamond-wrapper">
+                <img src="img/diamond-1.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-2.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-3.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-4.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-5.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards hidden">
+              <div class="angular" ng-controller="chart-red">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-black">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent black" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-yellow">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent yellow" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-green">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent green" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-blue">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent blue" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-grey">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent grey" ng-bind="percent"></span>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="row justify-content-center borders">
+        <div class="container">
+          <div class="row justify-content-center red-text">
+            <div class="col-12 col-sm-12 col-md-4">
+              <label class="custom-field">
+              <input id="red-text" type="text" required/>
+              <span id="red-text" class="placeholder">Group Name</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="switch-element-wrapper">
+            <label class="custom-field">
+              <input type="text" required/>
+              <span class="placeholder">Name</span>
+              <div class="charts-icon">
+                <img class="chart swith-toggle" src="img/pie-chart-outline.svg" alt="chart" onclick="swithToggle(event)">
+              </div>
+            </label>
+            <div class="diamonds visible">
+              <div class="diamond-wrapper">
+                <img src="img/card-1.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-2.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-3.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-4.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-5.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-6.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards hidden">
+              <div class="angular" ng-controller="chart-grey">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent grey" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-yellow">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent yellow" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-red">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-black">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent black" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-blue">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent blue" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-green">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent green" ng-bind="percent"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="switch-element-wrapper">
+            <label class="custom-field">
+              <input type="text" required/>
+              <span class="placeholder">Name</span>
+              <div class="charts-icon">
+                <img class="chart swith-toggle" src="img/pie-chart-outline.svg" alt="chart" onclick="swithToggle(event)">
+              </div>
+            </label>
+            <div class="diamonds visible">
+              <div class="diamond-wrapper">
+                <img src="img/card-1.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-2.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-3.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-4.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-5.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-6.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards hidden">
+              <div class="angular" ng-controller="chart-grey">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent grey" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-yellow">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent yellow" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-red">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-black">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent black" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-blue">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent blue" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-green">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent green" ng-bind="percent"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="switch-element-wrapper">
+            <label class="custom-field">
+              <input type="text" required/>
+              <span class="placeholder">Name</span>
+              <div class="charts-icon">
+                <img class="chart swith-toggle" src="img/pie-chart-outline.svg" alt="chart" onclick="swithToggle(event)">
+              </div>
+            </label>
+            <div class="diamonds visible">
+              <div class="diamond-wrapper">
+                <img src="img/card-1.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-2.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-3.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-4.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-5.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/card-6.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards hidden">
+              <div class="angular" ng-controller="chart-grey">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent grey" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-yellow">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent yellow" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-red">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-black">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent black" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-blue">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent blue" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-green">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent green" ng-bind="percent"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center borders">
+        <div class="container">
+          <div class="row justify-content-center red-text">
+            <div class="col-12 col-sm-12 col-md-4">
+              <label class="custom-field">
+              <input id="red-text" type="text" required/>
+              <span id="red-text" class="placeholder">Group Name</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="switch-element-wrapper">
+            <label class="custom-field">
+              <input type="text" required/>
+              <span class="placeholder">Name</span>
+              <div class="charts-icon">
+                <img class="chart swith-toggle" src="img/pie-chart-outline.svg" alt="chart" onclick="swithToggle(event)">
+              </div>
+            </label>
+            <div class="diamonds visible">
+              <div class="diamond-wrapper">
+                <img src="img/diamond-1.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-2.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-3.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-4.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-5.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards hidden">
+              <div class="angular" ng-controller="chart-red">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-black">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent black" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-yellow">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent yellow" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-green">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent green" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-blue">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent blue" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-grey">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent grey" ng-bind="percent"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="switch-element-wrapper">
+            <label class="custom-field">
+              <input type="text" required/>
+              <span class="placeholder">Name</span>
+              <div class="charts-icon">
+                <img class="chart swith-toggle" src="img/pie-chart-outline.svg" alt="chart" onclick="swithToggle(event)">
+              </div>
+            </label>
+            <div class="diamonds visible">
+              <div class="diamond-wrapper">
+                <img src="img/diamond-1.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-2.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-3.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-4.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-5.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards hidden">
+              <div class="angular" ng-controller="chart-red">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-black">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent black" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-yellow">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent yellow" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-green">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent green" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-blue">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent blue" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-grey">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent grey" ng-bind="percent"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="switch-element-wrapper">
+            <label class="custom-field">
+              <input type="text" required/>
+              <span class="placeholder">Name</span>
+              <div class="charts-icon">
+                <img class="chart swith-toggle" src="img/pie-chart-outline.svg" alt="chart" onclick="swithToggle(event)">
+              </div>
+            </label>
+            <div class="diamonds visible">
+              <div class="diamond-wrapper">
+                <img src="img/diamond-1.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-2.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-3.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-4.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="diamond-wrapper">
+                <img src="img/diamond-5.svg" alt="">
+                <span class="text">Text</span>
+                <div id="input-wrapper" class="input-wrapper">
+                  <input type="text" name="" value="">
+                  <button onclick="closeInputs()" >
+                    <img src="img/icon-done.svg" alt="done" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards hidden">
+              <div class="angular" ng-controller="chart-red">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-black">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent black" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-yellow">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent yellow" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-green">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent green" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-blue">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent blue" ng-bind="percent"></span>
+                </span>
+              </div>
+              <div class="angular" ng-controller="chart-grey">
+                <span class="chart" easypiechart percent="anotherPercent" options="anotherOptions">
+                  <span class="percent grey" ng-bind="percent"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-12">
           <button>Start</button>
         </div>
       </div>
     </div>
+
     <footer>
       <p class="Rights">© 2019 Swiss Watch Game.  All Rights Reserved</p>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
     <script src="js/angular.easypiechart.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
